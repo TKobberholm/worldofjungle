@@ -1,0 +1,325 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* root colors */
+:root {
+    --white: #f5f7ea;
+    --green: #5EA617;
+    --darkgreen: #051C01;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--white);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 2px;
+    background-image: url('../assets/blade.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h1, h2, h3, h4, h5, h6, .button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 50px;
+}
+h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+}
+p {
+    margin-bottom: 2rem;
+}
+a {
+    text-decoration: 2px dotted underline var(--green);
+    color: var(--white);
+}
+a:hover {
+    color: var(--green);
+}
+
+.container {
+    width: 100%;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    content: "";
+    padding: 2rem;
+    width: 50%;
+}
+
+.box {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(30px);
+    width: 27rem;
+    height: 26rem;
+    text-align: center;
+    margin-left: 6.65rem;
+    margin-top: 9.7rem;
+    padding: 40px 20px;
+}
+.button {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--green);
+    padding: 15px;
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: var(--darkgreen);
+}
+/* NAV BAR */
+nav {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+  }
+  ul {
+    display: inline;
+    margin: 0 0 0 620px;
+    padding:0;
+    z-index: 99;
+  }
+  nav ul ul { 
+    display: none; 
+    margin:0; 
+  }
+  nav ul li:hover > ul { 
+    display: block;
+  }  
+  nav ul {
+      box-shadow: 0px 0px 9px rgba(0, 0, 0, 1);
+      background-color: rgba(255, 255, 255, .15);
+	  backdrop-filter: blur(30px);
+      list-style: none;
+      position: relative;
+      display: inline-table;
+  }
+  nav ul:after {
+      content: "";
+      clear: both;
+      display: block;
+  }
+  nav ul li { 
+    float: left; 
+  } 
+  nav ul li:hover { 
+    background-color: #ffffff20;
+  }
+  nav ul li a {
+      color: #f5f7ea;
+      font-weight:600;
+    letter-spacing: 1px;
+      display: block;
+      padding: 15px 35px;
+      text-decoration: none;
+      text-transform: uppercase;
+  }
+  nav ul li a:hover {
+    color: #000000;
+  }
+  nav ul ul {
+      border-radius: 0px;
+      padding: 0;
+      position: absolute;
+      top: 100%;
+      
+  }
+  nav ul ul li {
+	  backdrop-filter: blur(30px);
+      float: none;
+      min-width: 170px;
+      position: relative;
+  }
+  nav ul ul li a {
+      padding: 12px 35px;
+      color: var(--white);
+      text-align:left;
+  }
+  nav ul ul li a:hover { 
+    background-color: #051C0199;
+    backdrop-filter: blur(30px);
+    color: var(--white);
+  }
+  nav ul ul ul {
+      position: absolute;
+      left: 100%;
+      top:0;
+  }
+  nav ul ul ul li {
+    background-color: #051C0199;
+  }
+
+/* HERO INDEX */
+#hero {
+    background-image: url('../assets/mosfroe\ paa\ blad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* MAIN BOX STYLE */
+.mainbox {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(30px);
+    margin: 6rem 6.5rem;
+    padding: 3.5rem 2.5rem;
+}
+.mainbox h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 3rem 4rem;
+}
+.card {
+    width: 100%;
+    max-width: 300px;
+    background-color: #051c01;
+    box-shadow: 0 0 1rem 0 rgba(f, f, f, .2);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+    
+  .card-content h2 {
+    text-align: center;
+    font-size: 24px;
+    padding-top: 1rem;
+  }
+  
+  .card-content h2 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .card-content h2 a:hover {
+    color: green;
+  }
+  
+/* OM OS */
+.imgcrop {
+    height: 50vh;
+    width: 125%;
+    opacity: 0.8;
+}
+.imgcrop2 {
+    height: 60vh;
+    width: 100%;
+    opacity: 0.8;
+}
+
+/* GUIDES */
+.guideimg {
+    height: 100vh;
+    transform: rotate(-45deg);
+    position: relative;
+    right: -150px;
+    top: -100px;
+}
+.guideimg2 {
+    height: 80vh;
+    width: 100%;
+}
+.funfact {
+    width: 23%;
+}
+button {
+    color: var(--white);
+    background-color: var(--green);
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+button:hover {
+    background-color: var(--darkgreen);
+}
+
+/* KONTAKTFORMULAR */
+.form-group {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    padding-left: 25%;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    border-radius: 4px;
+    color:var(--white)
+  }
+  button[type="submit"] {
+    margin-left: 70%;
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+  }
+  
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkgreen);
+    padding: 20px;
+  }
+  .footer-column {
+    flex: 1;
+    padding: 10px;
+  }
+  .footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .email i {
+    margin-right: 5px;
+  }
+  .social-media a {
+    margin-left: -20px;
+  } 
+  .footer-logo{
+    width: 200px;
+    height: 150px;
+  }
